@@ -9,3 +9,8 @@ $x , $y , $latitude, $longitude
 ```
 raster_value('your_raster_data', 1, make_point($x, $y))
 ```
+
+- Extract statistics from points
+```
+raster_statistic('your_raster_data',1,'avg') # min, max, avg, stdev, range, sum
+```
