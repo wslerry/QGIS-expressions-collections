@@ -1,7 +1,11 @@
 # A collection of QGIS expression used in my daily task
 
-- Extract value from points
-
+- Create X, Y, lat ,long
 ```
-raster_value('T1M_DTM', 1, make_point($x, $y))
+$x , $y , $latitude, $longitude
+```
+
+- Extract value from points
+```
+raster_value('your_raster_data', 1, make_point($x, $y))
 ```
