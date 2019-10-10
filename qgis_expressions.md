@@ -19,3 +19,8 @@ raster_value('your_raster_data',1,point_on_surface($geometry))
 ```
 raster_statistic('your_raster_data',1,'avg') # min, max, avg, stdev, range, sum
 ```
+
+- Create ellipse from dataset attributes
+```
+make_ellipse(point_on_surface($geometry), "semiminor", "semimajor", "az")
+```
